@@ -1,0 +1,19 @@
+<h1>Jyri's book collection</h1>
+
+<h2>Your saved books:</h2>
+
+<p><form action="{{ book.get_absolute_url }}/bookcollection/create/">
+    <input type="submit" value="Create new">
+</form>
+
+{% for book in object_list %}
+   <h3> <p><b><a href="{{ book.get_absolute_url}}"><b>{{ book.title }}</b></a></h3>
+	<li><b>author:</b> {{ book.author}}</li>
+	<li><b>year:</b> {{ book.year}}</li>
+	<li><b>ISBN:</b> {{ book.isbn}}</li>
+	<li><b>Edition:</b> {{ book.edition}}</li>		
+_________________________________________________________
+	
+{% empty %}
+	<p>No books yet. Feel free to add one!</p>
+{% endfor %}

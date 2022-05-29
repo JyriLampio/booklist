@@ -1,0 +1,20 @@
+{% extends "books/base.html" %}
+
+
+{% block content %}
+{{ object }}
+
+<p><form action="{{ book.get_absolute_url }}/update">
+    <input type="submit" value="Update Info">
+</form></p>
+<p><form action="{{ book.go_back }}">
+    <input type="submit" value="Go Back">
+</form></p>
+
+
+<p><form action="{{ book.get_absolute_url }}/delete">
+    <input type="submit" value="Delete">
+</form></p>
+
+{% endblock content %}
+
