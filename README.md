@@ -1,5 +1,5 @@
 # booklist
-Web application for book collection.
+Web application for book collection. You can view a list of your books and edit or delete them.
 
 ## Required applications
 
@@ -7,3 +7,4 @@ You will need a virtualenv installed for this. You can look installation instruc
 
 
 ![listview](images/list.png)
+![detailview](images/detail.png)
